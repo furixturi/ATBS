@@ -1,6 +1,13 @@
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
               ['Alice', 'Bob', 'Carol', 'David'],
               ['dogs', 'cats', 'moose', 'goose']]
+'''
+The goal is to print the above data as follows:
+apples    Alice   dogs
+orranges  Bob     cats
+cherries  Carol   moose
+banana    David   goose
+'''
 
 def calc_max_col_widths(table_data):
   return [max([len(item) for item in col]) for col in table_data]
