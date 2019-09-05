@@ -22,8 +22,8 @@ def start_game():
   global source_text 
   print('******** MAD LIBS ********\n')
   if len(sys.argv) < 2 or os.path.exists(sys.argv[1]) is not True:
-    use_default_text = input('No input file. Use default text? y/n\t')
-    if use_default_text.lower() != 'y':
+    use_default_text = input('No input file found. Use default text? y/n\t')
+    if use_default_text.lower() != 'y' and use_default_text != '':
       print('Bring your text next time. Bye!')
       sys.exit()
     else:
